@@ -27,7 +27,7 @@ public class LoginPage extends BasePage {
 
 	public void fillemail(){  
 		new WebDriverWait(driver, Duration.ofSeconds(15)).until(ExpectedConditions.visibilityOfElementLocated(Correoelectronico_TextBox));
-		driver.findElement(Correoelectronico_TextBox).sendKeys("");
+		driver.findElement(Correoelectronico_TextBox).sendKeys("Taniamelinna_rp19@hotmail.com");
 	}
 	
 	public void ClickatContinuarButton(){ 
@@ -37,7 +37,7 @@ public class LoginPage extends BasePage {
 
 	public void fillpassword(){ 	
 		new WebDriverWait(driver, Duration.ofSeconds(15)).until(ExpectedConditions.visibilityOfElementLocated(Contraseña_TextBox)); 
-		driver.findElement(Contraseña_TextBox).sendKeys("");
+		driver.findElement(Contraseña_TextBox).sendKeys("Meli1994236");
 	}
 	
 	public void ClickatIniciarSesionButton(){ 

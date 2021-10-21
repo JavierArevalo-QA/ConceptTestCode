@@ -48,7 +48,7 @@ public class MyFirstTestCaseDisneyPlus extends BaseTest {
 		 MethodsfromLoginPage.ClickatIniciarSesionButton();
 		 MethodsfromLoginPage.ClickatProfileIcon();
 		 MethodsfromLoginPage.ClickatSelectFalconandWinterSoldierStreaming(); 
-		 MethodsfromLoginPage.ClickatVerahora();
+		// MethodsfromLoginPage.ClickatVerahora();
 	}
 	
 	//Test

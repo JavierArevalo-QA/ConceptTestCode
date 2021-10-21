@@ -5,8 +5,8 @@
     <classes>
       <class name="org.selenium.pom.MyFirstTestCaseDisneyPlus">
         <methods>
-          <include name="CheckAccount"/>
           <include name="startDriver"/>
+          <include name="CheckStreaming"/>
           <include name="quitDriver"/>
         </methods>
       </class> <!-- org.selenium.pom.MyFirstTestCaseDisneyPlus -->
