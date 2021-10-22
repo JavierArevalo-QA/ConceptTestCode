@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Oct 21 12:13:40 CDT 2021</td>
+<td>Started on:</td><td>Fri Oct 22 09:47:15 CDT 2021</td>
 </tr>
-<tr><td>Total time:</td><td>50 seconds (50631 ms)</td>
+<tr><td>Total time:</td><td>41 seconds (41799 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,17 +75,16 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='org.selenium.pom.MyFirstTestCaseDisneyPlus.CheckStreaming()'><b>CheckStreaming</b><br>Test class: org.selenium.pom.MyFirstTestCaseDisneyPlus</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: .sc-feryYK.sc-jKmXuR.dvEZAn.skipToContentTarget.button (tried for 15 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.0.0-beta-4&apos;, revision: &apos;29f46d02dd&apos;
-System info: host: &apos;Javiers-MacBook-Pro.local&apos;, ip: &apos;2806:109f:c:207c:208e:e3c5:338a:32bb%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.5&apos;, java.version: &apos;16.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.81, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: /var/folders/9c/3q2hfk4j0p5...}, goog:chromeOptions: {debuggerAddress: localhost:53712}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:53712/devtoo..., se:cdpVersion: 94.0.4606.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 7c8844a92bed59e41864a988162bc63e
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at Pages.LoginPage.ClickatVerahora(LoginPage.java:73)
-	at org.selenium.pom.MyFirstTestCaseDisneyPlus.CheckStreaming(MyFirstTestCaseDisneyPlus.java:51)
+<td title='org.selenium.pom.MyFirstTestCaseDisneyPlus.CheckAccount()'><b>CheckAccount</b><br>Test class: org.selenium.pom.MyFirstTestCaseDisneyPlus</td>
+<td><div><pre>java.lang.AssertionError: expected [https://privacychoices.thewaltdisneycompany.com/en-US] but found [https://privacychoices.thewaltdisneycompany.commmm/en-US]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at Pages.LoginPage.AssertLink(LoginPage.java:105)
+	at org.selenium.pom.MyFirstTestCaseDisneyPlus.CheckAccount(MyFirstTestCaseDisneyPlus.java:38)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -114,17 +113,16 @@ Session ID: 7c8844a92bed59e41864a988162bc63e
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1878454236", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1878454236'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: .sc-feryYK.sc-jKmXuR.dvEZAn.skipToContentTarget.button (tried for 15 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.0.0-beta-4&apos;, revision: &apos;29f46d02dd&apos;
-System info: host: &apos;Javiers-MacBook-Pro.local&apos;, ip: &apos;2806:109f:c:207c:208e:e3c5:338a:32bb%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.5&apos;, java.version: &apos;16.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.81, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: /var/folders/9c/3q2hfk4j0p5...}, goog:chromeOptions: {debuggerAddress: localhost:53712}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:53712/devtoo..., se:cdpVersion: 94.0.4606.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 7c8844a92bed59e41864a988162bc63e
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at Pages.LoginPage.ClickatVerahora(LoginPage.java:73)
-	at org.selenium.pom.MyFirstTestCaseDisneyPlus.CheckStreaming(MyFirstTestCaseDisneyPlus.java:51)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1671084561", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1671084561'><pre>java.lang.AssertionError: expected [https://privacychoices.thewaltdisneycompany.com/en-US] but found [https://privacychoices.thewaltdisneycompany.commmm/en-US]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at Pages.LoginPage.AssertLink(LoginPage.java:105)
+	at org.selenium.pom.MyFirstTestCaseDisneyPlus.CheckAccount(MyFirstTestCaseDisneyPlus.java:38)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -154,7 +152,7 @@ Session ID: 7c8844a92bed59e41864a988162bc63e
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>25</td>
+<td>16</td>
 <td>org.selenium.pom.MyFirstTestCaseDisneyPlus@6ce139a4</td></tr>
 </table><p>
 </body>

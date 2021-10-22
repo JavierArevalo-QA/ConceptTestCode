@@ -104,7 +104,7 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="org.selenium.pom.MyFirstTestCaseDisneyPlus" class="method navigator-link" hash-for-method="CheckStreaming">CheckStreaming</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="org.selenium.pom.MyFirstTestCaseDisneyPlus" class="method navigator-link" hash-for-method="CheckAccount">CheckAccount</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -127,19 +127,18 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="CheckStreaming">
-                  </a> <!-- CheckStreaming -->
-                  <span class="method-name">CheckStreaming</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: .sc-feryYK.sc-jKmXuR.dvEZAn.skipToContentTarget.button (tried for 15 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.0.0-beta-4&apos;, revision: &apos;29f46d02dd&apos;
-System info: host: &apos;Javiers-MacBook-Pro.local&apos;, ip: &apos;2806:109f:c:207c:208e:e3c5:338a:32bb%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.5&apos;, java.version: &apos;16.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.81, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: /var/folders/9c/3q2hfk4j0p5...}, goog:chromeOptions: {debuggerAddress: localhost:53712}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:53712/devtoo..., se:cdpVersion: 94.0.4606.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 7c8844a92bed59e41864a988162bc63e
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at Pages.LoginPage.ClickatVerahora(LoginPage.java:73)
-	at org.selenium.pom.MyFirstTestCaseDisneyPlus.CheckStreaming(MyFirstTestCaseDisneyPlus.java:51)
+                  <a name="CheckAccount">
+                  </a> <!-- CheckAccount -->
+                  <span class="method-name">CheckAccount</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [https://privacychoices.thewaltdisneycompany.com/en-US] but found [https://privacychoices.thewaltdisneycompany.commmm/en-US]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at Pages.LoginPage.AssertLink(LoginPage.java:105)
+	at org.selenium.pom.MyFirstTestCaseDisneyPlus.CheckAccount(MyFirstTestCaseDisneyPlus.java:38)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -177,7 +176,7 @@ Session ID: 7c8844a92bed59e41864a988162bc63e
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/private/var/folders/9c/3q2hfk4j0p5dp2fgd8yg0jp40000gn/T/testng-eclipse--823043057/testng-customsuite.xml</span>
+            <span class="header-content">/private/var/folders/9c/3q2hfk4j0p5dp2fgd8yg0jp40000gn/T/testng-eclipse-1906633867/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -188,7 +187,7 @@ Session ID: 7c8844a92bed59e41864a988162bc63e
     &lt;classes&gt;
       &lt;class name=&quot;org.selenium.pom.MyFirstTestCaseDisneyPlus&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;CheckStreaming&quot;/&gt;
+          &lt;include name=&quot;CheckAccount&quot;/&gt;
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- org.selenium.pom.MyFirstTestCaseDisneyPlus --&gt;
     &lt;/classes&gt;
@@ -232,14 +231,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'CheckStreaming')
+data.setCell(0, 1, 'CheckAccount')
 data.setCell(0, 2, 'org.selenium.pom.MyFirstTestCaseDisneyPlus')
-data.setCell(0, 3, 25744);
+data.setCell(0, 3, 16558);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 25 seconds</span>
+              <span class="suite-total-time">Total running time: 16 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -260,7 +259,7 @@ return data;
             <div class="ignored-class-div">
               <span class="ignored-class-name">org.selenium.pom.MyFirstTestCaseDisneyPlus</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">CheckAccount</span>
+                <span class="ignored-method-name">CheckStreaming</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -280,12 +279,12 @@ return data;
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">CheckStreaming</span>
-                <span class="method-start">9668 ms</span>
+                <span class="method-name">CheckAccount</span>
+                <span class="method-start">9951 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">quitDriver</span>
-                <span class="method-start">35419 ms</span>
+                <span class="method-start">26514 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

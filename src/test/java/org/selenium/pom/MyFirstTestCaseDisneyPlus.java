@@ -23,7 +23,7 @@ public class MyFirstTestCaseDisneyPlus extends BaseTest {
 	
 	@Test 
 
-	public void CheckAccount(){ 
+	public void CheckAccount() throws InterruptedException{ 
 	     LoginPage MethodsfromLoginPage = new LoginPage(driver);  	
 		 
 		 
@@ -34,7 +34,8 @@ public class MyFirstTestCaseDisneyPlus extends BaseTest {
 		 MethodsfromLoginPage.ClickatProfileIcon();
 		 MethodsfromLoginPage.ClickatAccountName();
 		 MethodsfromLoginPage.ClickatCuentaOption(); 
-		 
+		 MethodsfromLoginPage.AssertUserHasDisneySubscription();
+		 MethodsfromLoginPage.AssertLink();
 	}
 	
 	@Test 
