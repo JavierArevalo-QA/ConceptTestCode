@@ -17,7 +17,8 @@ public class DriverManager {
 		
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver(); 
-		driver.get("https://www.disneyplus.com/es-419/login"); 
+		driver.get("https://stg.mapright.com/");
+		//https://www.disneyplus.com/es-419/login
 		driver.manage().window().maximize(); 
 		return driver;
 	}

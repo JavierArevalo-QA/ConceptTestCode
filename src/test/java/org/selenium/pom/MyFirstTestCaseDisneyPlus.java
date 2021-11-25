@@ -24,9 +24,10 @@ public class MyFirstTestCaseDisneyPlus extends BaseTest {
 	@Test 
 
 	public void CheckAccount() throws InterruptedException{ 
-	     LoginPage MethodsfromLoginPage = new LoginPage(driver);  	
-		 
-		 
+	     LoginPage MethodsfromLoginPage = new LoginPage(driver);
+
+		 MethodsfromLoginPage.fillemail_MR();
+		 /*
 		 MethodsfromLoginPage.fillemail(); 
 		 MethodsfromLoginPage.ClickatContinuarButton();
 		 MethodsfromLoginPage.fillpassword(); 
@@ -36,21 +37,26 @@ public class MyFirstTestCaseDisneyPlus extends BaseTest {
 		 MethodsfromLoginPage.ClickatCuentaOption(); 
 		 MethodsfromLoginPage.AssertUserHasDisneySubscription();
 		 MethodsfromLoginPage.AssertLink();
+	*/
 	}
+
 	
 	@Test 
 	public void CheckStreaming() {
 		 
 		 LoginPage MethodsfromLoginPage = new LoginPage(driver);
 		
-		 MethodsfromLoginPage.fillemail(); 
+		 MethodsfromLoginPage.fillemail_MR();
+		/*
 		 MethodsfromLoginPage.ClickatContinuarButton();
 		 MethodsfromLoginPage.fillpassword(); 
 		 MethodsfromLoginPage.ClickatIniciarSesionButton();
 		 MethodsfromLoginPage.ClickatProfileIcon();
 		 MethodsfromLoginPage.ClickatSelectFalconandWinterSoldierStreaming(); 
 		// MethodsfromLoginPage.ClickatVerahora();
+	*/
 	}
+
 	
 	//Test
 	//Test

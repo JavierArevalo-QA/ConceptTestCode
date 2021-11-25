@@ -11,8 +11,10 @@ import org.testng.Assert;
 
 public class LoginPage extends BasePage {
 
-	private By Correoelectronico_TextBox = By.id("email"); 
-	private By Continuar_Button = By.name("dssLoginSubmit"); 
+
+	private By Correoelectronico_TextBox = By.name("email");
+	/*
+	private By Continuar_Button = By.name("dssLoginSubmit");
 	private By Contraseña_TextBox = By.id("password");
 	private By IniciarSesion_Button = By.name("dssLoginSubmit");
 	private By Profile_Icon = By.cssSelector(".sc-eMigcr.sc-chbbiW.JBOOo.profile-avatar");
@@ -22,18 +24,23 @@ public class LoginPage extends BasePage {
 	private By VERAHORA_Button = By.cssSelector(".sc-feryYK.sc-jKmXuR.dvEZAn.skipToContentTarget.button");
 	private By Subscripcion_Text = By.cssSelector(".sc-hwcHae.sc-cANqwJ.cwJfYp.sc-lhLRcH.eZDFnp[tabindex='0'][data-testid='internal-subscription-d2c-disney_plus_monthly_mx_web_ca95ace']");
 	private By OpcionesdePricadidad_Link = By.cssSelector("button[aria-label='Opciones de privacidad']");	
-	
+	*/
 	
 	public LoginPage(WebDriver driver) {
 		super(driver);
 		// TODO Auto-generated constructor stub
 	}
 
+	public void fillemail_MR(){
+		new WebDriverWait(driver, Duration.ofSeconds(15)).until(ExpectedConditions.visibilityOfElementLocated(Correoelectronico_TextBox));
+		driver.findElement(Correoelectronico_TextBox).sendKeys("test");
+	}
+
 	public void fillemail(){  
 		new WebDriverWait(driver, Duration.ofSeconds(15)).until(ExpectedConditions.visibilityOfElementLocated(Correoelectronico_TextBox));
 		driver.findElement(Correoelectronico_TextBox).sendKeys("Taniamelinna_rp19@hotmail.com");
 	}
-	
+	/*
 	public void ClickatContinuarButton(){ 
 		new WebDriverWait(driver, Duration.ofSeconds(15)).until(ExpectedConditions.visibilityOfElementLocated(Continuar_Button));
 	driver.findElement(Continuar_Button).click();
@@ -119,4 +126,6 @@ public class LoginPage extends BasePage {
 	}
 	//Test
 	//Test
+
+	 */
 }
